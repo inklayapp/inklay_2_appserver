@@ -1,0 +1,17 @@
+# macOS / Windows system files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Your settings and API keys (never share these)
+config.json
+*.local.json
+.env
+
+# Editor folders
+.vscode/
+.idea/
+
+# Screenshots for docs
+setup-page-*.png
