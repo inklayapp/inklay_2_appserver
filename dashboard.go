@@ -24,17 +24,5 @@ func renderDashboard(w, h int, now time.Time) *image.Gray {
 	drawImage(img, "assets/inklay-welcome-w.png", ix, iy, 0)
 	drawText(img, fontRegular, 24, "Hello World", ix+556, iy+116, 255)
 
-	// Bottom left: how to get started.
-	steps := []string{
-		"1. Open the folder in Claude Code",
-		"2. Prompt your ideas",
-		"3. Run Start Inklay App Server.command",
-		"4. Add the URL to the INKLAY Image URL app.",
-	}
-	y := h - margin - 32*(len(steps)-1)
-	for _, s := range steps {
-		drawText(img, fontRegular, 24, s, margin, y, 255)
-		y += 32
-	}
 	return img
 }
